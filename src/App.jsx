@@ -1,13 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const getRandomInteger = count => {
+  return Math.floor(Math.random() * (count + 1));
+} 
+
+const Header = () => {
+  const headerDescription = ['리액트 스터디', '리액트 연습', '리린이 등장'];
+  const descriptionCount = headerDescription.length;
+
+  const description = headerDescription[getRandomInteger(descriptionCount)];
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {description}
         </p>
         <a
           className="App-link"
@@ -18,6 +26,13 @@ function App() {
           Learn React
         </a>
       </header>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Header className="App-header"></Header>
     </div>
   );
 }
