@@ -17,4 +17,4 @@ create-react-app <프로젝트 명>
 
 ## React 개념
 ### Props란?
-<img src="./react props 개념.png" style="width: 700px; height: 500px;">
+<img src="./react props 개념.png" style="width: 100%; height: 500px;">
