@@ -25,4 +25,4 @@ create-react-app <프로젝트 명>
 프롭스의 특징
 - 자식 컴포넌트에서 props는 읽기 전용 입니다. 함수 컴포넌트, 클래스 컴포넌트 모두 컴포넌트의 자체 props를 수정할 수 없습니다.
 - 부모 컴포넌트의 props를 변경하면, 해당 props를 사용하고 있던 자식 컴포넌트는 리렌더링 됩니다.
-<img src="./react props 개념.png" style="width: 100%; height: 500px;">
+<img src="./react props.png" style="width: 100%; height: 500px;">
