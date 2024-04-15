@@ -1,4 +1,4 @@
-import logo from '../images/logo.svg';
+import logo from '../../images/logo.svg';
 
 const getRandomInteger = count => {
     return Math.floor(Math.random() * count);
