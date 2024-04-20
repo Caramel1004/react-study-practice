@@ -69,3 +69,39 @@ main h2 {
   list-style: none;
   padding: 0;
 }
+
+#example-box {
+  padding: 10px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  white-space: pre-wrap;
+}
+
+#example-box h2{
+  color: #ffffff;
+  text-align: center;
+}
+
+#example-box p{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+}
+
+#code-box {
+  padding: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #4b3068;
+  opacity: 0.8;
+  border: 0.5px groove #ffffff;
+  border-radius: 10px;
+  text-align: left;
+  line-height: 2rem;
+}
