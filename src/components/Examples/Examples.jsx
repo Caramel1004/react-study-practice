@@ -5,7 +5,9 @@ import { useState } from 'react';
 export default function Examples() {
     const [selectedTopic, setSelectedTopic] = useState('리액트 개념');
 
-    function onClickHandler(selectedButton) {
+    const topics = [...Object.keys(EXAMPLES)].filter(e => e !== '리액트 개념');
+
+    const onClickHandler = selectedButton => {
         setSelectedTopic(selectedButton);
     }
 
@@ -13,10 +15,7 @@ export default function Examples() {
         <section id="core-concepts">
             <h2>{selectedTopic}</h2>
             <ul>
-                <TabButton onClick={() => onClickHandler('components')}>components</TabButton>
-                <TabButton onClick={() => onClickHandler('jsx')}>jsx</TabButton>
-                <TabButton onClick={() => onClickHandler('props')}>props</TabButton>
-                <TabButton onClick={() => onClickHandler('state')}>state</TabButton>
+                {topics.map(topic => <TabButton isSelected={selectedTopic === topic} onClick={() => onClickHandler(topic)}>{topic}</TabButton>)}
             </ul>
             <div id="example-box">
                 {!selectedTopic ? <p>리액트 개념을 선택하세요~!</p> : null}
