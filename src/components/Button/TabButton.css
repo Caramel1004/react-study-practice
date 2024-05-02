@@ -20,10 +20,10 @@
   background: #ffffff;
 }
 
-#tab-content h3 {
+.tab-content h3 {
   margin: 0;
 }
 
-#tab-content code {
+.tab-content code {
   font-size: 1rem;
 }
